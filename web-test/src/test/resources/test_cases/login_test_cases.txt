@@ -1,0 +1,77 @@
+UI test cases for SauceDemo login page
+
+--------------------------------------------------
+
+Positive test cases:
+
+1. Login with valid credentials: standard_user / secret_sauce
+Expected result: User is redirected to Products page.
+
+2. Login with valid credentials: problem_user / secret_sauce
+Expected result: User is redirected to Products page.
+
+3. Login with valid credentials: visual_user / secret_sauce
+Expected result: User is redirected to Products page.
+
+--------------------------------------------------
+
+Negative test cases:
+
+4. Login with valid username and invalid password
+Test data: standard_user / wrong_password
+Expected result: Error message "Epic sadface: Username and password do not match any user in this service" is displayed.
+
+5. Login with valid username and empty password
+Test data: standard_user / empty password
+Expected result: Error message "Epic sadface: Password is required" is displayed.
+
+6. Login with empty username and empty password
+Test data: empty username / empty password
+Expected result: Error message "Epic sadface: Username is required" is displayed.
+
+--------------------------------------------------
+
+Parameterized test:
+
+7. Login with invalid credentials using different test data sets
+Expected result: Correct error message is displayed for each invalid data set.
+
+==================================================
+
+Тест-кейсы для страницы логина SauceDemo
+
+--------------------------------------------------
+
+Позитивные тест-кейсы:
+
+1. Авторизация с валидными данными: standard_user / secret_sauce
+Ожидаемый результат: пользователь перенаправлен на страницу товаров.
+
+2. Авторизация с валидными данными: problem_user / secret_sauce
+Ожидаемый результат: пользователь перенаправлен на страницу товаров.
+
+3. Авторизация с валидными данными: visual_user / secret_sauce
+Ожидаемый результат: пользователь перенаправлен на страницу товаров.
+
+--------------------------------------------------
+
+Негативные тест-кейсы:
+
+4. Авторизация с валидным логином и неверным паролем
+Тестовые данные: standard_user / wrong_password
+Ожидаемый результат: отображается ошибка "Epic sadface: Username and password do not match any user in this service".
+
+5. Авторизация с валидным логином и пустым паролем
+Тестовые данные: standard_user / пустой пароль
+Ожидаемый результат: отображается ошибка "Epic sadface: Password is required".
+
+6. Авторизация с пустыми полями логина и пароля
+Тестовые данные: пустой логин / пустой пароль
+Ожидаемый результат: отображается ошибка "Epic sadface: Username is required".
+
+--------------------------------------------------
+
+Параметризованный тест:
+
+7. Авторизация с невалидными данными с использованием разных наборов данных
+Ожидаемый результат: для каждого набора данных отображается корректное сообщение об ошибке.
