@@ -15,12 +15,3 @@
 ## Как запускать
 mvn clean test
 
-
-**Структура**
-
-src/
-  test/
-    java/
-      tests/
-      pages/
-      api/
